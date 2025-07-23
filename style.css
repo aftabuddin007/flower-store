@@ -1,0 +1,158 @@
+
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5F8FF;
+}
+
+/*nevbar section*/
+.nevbar ul li a{
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(37, 36, 50);
+}
+.nevbar ul li{
+    list-style-type: none;
+    
+}
+.nevbar ul{
+    display: flex;
+    gap: 48px;
+
+}
+#shop, #about{
+   color: rgb(137, 135, 161); 
+   font-weight: 400;
+
+}
+#cart{
+    font-weight: 400;
+}
+
+.nevbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 18px;
+    align-items: center;
+}
+/*banner-section*/
+.banner-title h2{
+    font-family: "Noto Serif", serif;
+    font-weight:700 ;
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+}
+.banner-title h2 span{
+    color:rgb(233, 90, 8) ;
+}
+.banner-description{
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter", sans-serif;
+    margin-top: 13px;
+}
+.banner-image img{
+    height: 355px;
+    width: 570px;
+
+}
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+/*plants section*/
+.plant-title {
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-family: "Noto Serif", serif;
+}
+.plant-title  span{
+    color: rgb(233, 90, 8);
+}
+.plant-description{
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter", sans-serif;
+    margin-top: 13px;
+    padding: 0 126px;
+
+}
+.plant-title-description{
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 120px;
+}
+.plant-img img{
+    height: 322px;
+    width: 100%; 
+    margin-bottom: 30px;
+}
+.plant-name{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size:1.37rem ;
+}
+.plant-price{
+     font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size:1.37rem ;
+    margin-bottom: 30px;
+}
+.to-card{
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(233, 90, 8);
+    padding: 19px 87px;
+    border: none;
+    
+}
+.plant-all-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    gap: 20px;
+    margin-top: 30px;
+
+}
+
+
+/*media query*/
+@media screen and (max-width:576px) {
+  #shop, #about, #home{
+   display: none;
+  }
+  .banner{
+    flex-direction: column-reverse;
+    place-items: center;
+    padding-left: 20px;
+  }
+  .plant-all-card{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
