@@ -160,12 +160,16 @@ body{
     display: flex;
     gap: 60px;
     align-items: center;
+    
+}
+.flower-img{
+    width: 100%;
 }
 .flower-title-description{
     margin: 39px 0;
 }
 .flower-title-description ul{
-    padding-left: 15px;
+    padding-left: 30px;
 }
 .flower-badge {
     
@@ -175,6 +179,7 @@ body{
     z-index: -1;
     margin-top: 84px;
 }
+
 .flower-img{
     z-index: -1;
 }
@@ -198,39 +203,48 @@ body{
 /*offer-section*/
 .offer{
     display: flex;
-    justify-content: center;
+    justify-content: calc(50%);
     gap: 25px;
     max-width: 1140px;
     margin: 120px auto;
 }
 .offer-left-item1 {
     background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(./assets/deal-bloom.png);
-    height:201px ;
+    height: 201px;
     width: 367px;
     background-repeat: no-repeat;
     border-radius: 14px;
     padding: 65px 47px;
-    text-align: center;
-    
     margin-bottom: 25px;
+    text-align: center;
+    background-position: center;
+    
+    background-size: cover;
 }
 .offer-left-item2{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(./assets/deal-ana.png);
-    height:201px ;
+    height: 201px;
     width: 367px;
     background-repeat: no-repeat;
     border-radius: 14px;
     padding: 65px 47px;
     text-align: center;
+    background-position: center;
+    
+    background-size: cover;
 }
 .offer-right{
+    
     background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(./assets/deal-zabo.png);
-    height:423px ;
-    width: 753px;
+    
+    width: 100%;
     background-repeat: no-repeat;
     border-radius: 14px;
     padding: 172px 150px;
     text-align: center;
+    background-position: center;
+    
+    background-size: cover;
 }
 .offer-title{
    font-size: 20px; 
@@ -263,7 +277,7 @@ body{
 .join{
     background-image: url(./assets/news-letter-bg.png);
     max-width: 1440px;
-    padding: 200px ;
+    padding: 200px 0;
     background-size: cover;
     margin: 0 auto;
     text-align: center;
@@ -284,19 +298,22 @@ body{
     font-family: "Noto Serif", serif;
 }
 #email{
-    
+    height: 50px;
+    width: 600px;
     color: rgba(0, 0, 0, 0.5);
     border: none;
-    
+    font-family: "Inter", sans-serif;
+    padding-left:20px ;
     
 }
 #subscribe{
     background-color: rgb(233, 90, 8);
     font-weight: 600;
     color: rgb(255, 255, 255);
-    
+    height: 50px;
+    width: 186px;
     border: none;
-    
+    font-family: "Inter", sans-serif;
     
 }
 /*footer section*/
@@ -344,7 +361,9 @@ body{
      align-items: center;
 }
 
-
+.display{
+    display: none;
+}
 
 
 
@@ -399,7 +418,7 @@ body{
   }
   .flower{
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
     margin-top: 40px;
   }
   .flower-title{
@@ -410,9 +429,9 @@ body{
     
     width: 100%;
   }
-  .flower-description{
-        padding: 20px;
-  }  
+  .offer-right{
+    width: 100%;
+  } 
   
   
   .flower-badge{
@@ -428,12 +447,35 @@ body{
     padding: 20px;
    
   }
-  /* .offer{
+   .offer{
     flex-direction: column;
-  }*/
-
-
-
+    padding:0 15px;
+  }
+  .offer-left-item2{
+    width: 100%;
+    
+    border-radius: 0;
+  }
+  .offer-left-item1{
+    width: 100%;
+    
+  }
+  .offer-right{
+    padding: 65px 42px;
+    font-size: 1.37rem;
+  }
+  .offer-title , .offer-title1 {
+    font-size: 1.37rem;
+  }
+  .shop3{
+    font-size: 1rem;
+  }
+  .email-submit{
+     padding: 0 30px;
+  }
+  #email{
+    padding-left: 10px;
+  }
 
 
   .footer-content{
