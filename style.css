@@ -15,6 +15,7 @@
 }
 body{
     background-color: #F5F8FF;
+    overflow-x: hidden;
 }
 
 /*nevbar section*/
@@ -319,16 +320,16 @@ body{
 /*footer section*/
 .footer{
     max-width: 1440px;
-
-    margin: 0 auto;
-    padding: 50px 160px;
+    padding: 60px 160px;
+    margin: 120px auto;
+    
 }
 .footer-content{
     
     display: flex;
     justify-content: space-between;
-    
     gap: 110px;
+    
 }
 .footer-description{
     font-size: 1.37rem;
@@ -343,6 +344,7 @@ body{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     color: rgb(107, 114, 128);
+    white-space: nowrap
     
     
 }
@@ -383,6 +385,7 @@ body{
 @media screen and (max-width:576px) {
   .nevbar{
     padding: 20px;
+    margin-top: 50px;
   }
     #shop, #about, #home{
    display: none;
@@ -482,7 +485,7 @@ body{
         flex-direction: column;
         row-gap: 20px;
         place-items: left;
-
+        
   }
   .footer{
     padding: 20px 20px;
