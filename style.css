@@ -94,8 +94,8 @@ body{
     font-size: 1.37rem;
     color: rgba(0, 0, 0, 0.5);
     font-family: "Inter", sans-serif;
-    margin-top: 13px;
-    padding: 0 126px;
+    margin-top: 16px;
+    
 
 }
 .plant-title-description{
@@ -185,6 +185,9 @@ body{
     color: rgb(0, 0, 0);
     font-family: "Noto Serif", serif;
 }
+.deal-description{
+    padding: 0 276px;
+}
 .deal{
     max-width: 1440px;
     text-align: center;
@@ -192,18 +195,86 @@ body{
     margin: 0 auto;
     margin-top: 133px;
 }
+/*offer-section*/
+.offer{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1140px;
+    margin: 120px auto;
+}
+.offer-left-item1 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(./assets/deal-bloom.png);
+    height:201px ;
+    width: 367px;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    padding: 65px 47px;
+    text-align: center;
+    
+    margin-bottom: 25px;
+}
+.offer-left-item2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(./assets/deal-ana.png);
+    height:201px ;
+    width: 367px;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    padding: 65px 47px;
+    text-align: center;
+}
+.offer-right{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(./assets/deal-zabo.png);
+    height:423px ;
+    width: 753px;
+    background-repeat: no-repeat;
+    border-radius: 14px;
+    padding: 172px 150px;
+    text-align: center;
+}
+.offer-title{
+   font-size: 20px; 
+   font-weight: 700;
+   color: rgb(255, 255, 255);
+   font-family: "Noto Serif", serif;
+
+
+}
+.offer-title1{
+   font-size: 2.3rem; 
+   font-weight: 700;
+   color: rgb(255, 255, 255);
+   font-family: "Noto Serif", serif; 
+}
+.shop1 , .shop2{
+    font-size: 1rem; 
+   font-weight: 600;
+   color: rgb(255, 255, 255);
+   font-family: "Inter", sans-serif;
+}
+.shop3{
+   font-size: 1.75rem; 
+   font-weight: 600;
+   color: rgb(255, 255, 255);
+   font-family: "Inter", sans-serif; 
+}
 
 /*join section*/
 .join{
     background-image: url(./assets/news-letter-bg.png);
-    max-width: 100%;
-    background-repeat: no-repeat;
+    max-width: 1440px;
+    padding: 200px ;
+    background-size: cover;
     margin: 0 auto;
     text-align: center;
 }
-.join-ti-email{
-    padding: 200px 300px;
+.email-submit{
+    display: flex;
+    justify-content: center;
     
+}
+.join-ti-email{
+  
 }
 .join-title{
     color:rgb(255, 255, 255);
@@ -213,8 +284,9 @@ body{
     font-family: "Noto Serif", serif;
 }
 #email{
-    padding: 20px 500px 20px  20px;
+    
     color: rgba(0, 0, 0, 0.5);
+    border: none;
     
     
 }
@@ -222,7 +294,7 @@ body{
     background-color: rgb(233, 90, 8);
     font-weight: 600;
     color: rgb(255, 255, 255);
-    padding: 20px 60px;
+    
     border: none;
     
     
@@ -261,10 +333,15 @@ body{
     list-style-type: none;
     padding: 16px 0;
 }
-.footer-socials img {
+.footer-socials ul li  {
+    list-style-type: none;
+   
     
-    padding-left: 20px;
-    text-align: center;
+}
+.footer-socials ul{
+     display: flex;
+     gap: 20px;
+     align-items: center;
 }
 
 
@@ -285,24 +362,87 @@ body{
 
 /*media query*/
 @media screen and (max-width:576px) {
-  #shop, #about, #home{
+  .nevbar{
+    padding: 20px;
+  }
+    #shop, #about, #home{
    display: none;
   }
   .banner{
     flex-direction: column-reverse;
-    place-items: center;
-    padding-left: 20px;
+    
+    
+  }
+  .banner-title h2{
+    font-size: 2rem;
+    
+  }
+  .banner-title{
+    padding: 20px;
+  }
+  .banner-description{
+    font-size: 1rem;
+    
+    
+  }
+  .banner-image img{
+    width: 100%;
+    
+  }
+  .plant-description{
+        padding: 0 15px;
   }
   .plant-all-card{
     grid-template-columns: repeat(2,1fr);
+    padding:0 15px;
+    
   }
   .flower{
     flex-direction: column;
     padding: 20px;
     margin-top: 40px;
   }
+  .flower-title{
+    font-size: 1.5rem;
+    
+  }
+  .flower-img img{
+    
+    width: 100%;
+  }
+  .flower-description{
+        padding: 20px;
+  }  
+  
   
   .flower-badge{
     display: none;
+  }
+ .join-title{
+    font-size: 20px;
+  }
+  .join-ti-email{
+    
+  }
+  .deal-description{
+    padding: 20px;
+   
+  }
+  /* .offer{
+    flex-direction: column;
+  }*/
+
+
+
+
+
+  .footer-content{
+        flex-direction: column;
+        row-gap: 20px;
+        place-items: left;
+
+  }
+  .footer{
+    padding: 20px 20px;
   }
 }
