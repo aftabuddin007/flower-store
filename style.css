@@ -193,8 +193,40 @@ body{
     margin-top: 133px;
 }
 
-
-
+/*join section*/
+.join{
+    background-image: url(./assets/news-letter-bg.png);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    text-align: center;
+}
+.join-ti-email{
+    padding: 200px 300px;
+    
+}
+.join-title{
+    color:rgb(255, 255, 255);
+    font-size: 3.112rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: "Noto Serif", serif;
+}
+#email{
+    padding: 20px 500px 20px  20px;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100% - 186px;
+    
+}
+#subscribe{
+    background-color: rgb(233, 90, 8);
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding: 20px 60px;
+    border: none;
+    width: 186px;
+    
+}
 
 
 
