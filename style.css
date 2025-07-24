@@ -215,7 +215,7 @@ body{
 #email{
     padding: 20px 500px 20px  20px;
     color: rgba(0, 0, 0, 0.5);
-    width: 100% - 186px;
+    
     
 }
 #subscribe{
@@ -224,8 +224,20 @@ body{
     color: rgb(255, 255, 255);
     padding: 20px 60px;
     border: none;
-    width: 186px;
     
+    
+}
+/*footer section*/
+.footer{
+    max-width: 1440px;
+    
+}
+.footer-content{
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 110px;
 }
 
 
