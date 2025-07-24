@@ -140,6 +140,76 @@ body{
     margin-top: 30px;
 
 }
+/*flower and plant lover section*/
+.flower-title{
+    font-size: 3.15rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-family: "Noto Serif", serif;
+}
+.flower-description {
+    font-size: 1.37rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+}
+.flower{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+.flower-title-description{
+    margin: 39px 0;
+}
+.flower-title-description ul{
+    padding-left: 15px;
+}
+.flower-badge {
+    
+    text-align: center;
+    margin-bottom: -127px;
+    margin-left: -93px;
+    z-index: -1;
+    margin-top: 84px;
+}
+.flower-img{
+    z-index: -1;
+}
+/*latest deal section*/
+.deal-title{
+    font-size: 3.112rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-family: "Noto Serif", serif;
+}
+.deal{
+    max-width: 1440px;
+    text-align: center;
+    
+    margin: 0 auto;
+    margin-top: 133px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*media query*/
@@ -154,5 +224,14 @@ body{
   }
   .plant-all-card{
     grid-template-columns: repeat(2,1fr);
+  }
+  .flower{
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .flower-badge{
+    display: none;
   }
 }
