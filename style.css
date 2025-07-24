@@ -230,14 +230,41 @@ body{
 /*footer section*/
 .footer{
     max-width: 1440px;
-    
+
+    margin: 0 auto;
+    padding: 50px 160px;
 }
 .footer-content{
-    max-width: 1140px;
+    
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    
     gap: 110px;
+}
+.footer-description{
+    font-size: 1.37rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 16px;
+}
+.footer-navber1 ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: rgb(107, 114, 128);
+    
+    
+}
+.footer-navber1 ul li{
+    list-style-type: none;
+    padding: 16px 0;
+}
+.footer-socials img {
+    
+    padding-left: 20px;
+    text-align: center;
 }
 
 
