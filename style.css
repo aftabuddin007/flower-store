@@ -328,7 +328,7 @@ body{
 .footer{
     max-width: 1440px;
     padding: 60px 160px;
-    margin: 120px auto;
+    
     overflow-x: hidden;
 }
 .footer-content{
