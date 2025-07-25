@@ -399,7 +399,7 @@ body{
   }
   .banner{
     flex-direction: column-reverse;
-    
+    margin-top: 20px;
     
   }
   .banner-title h2{
@@ -415,7 +415,8 @@ body{
     
   }
   .banner-image img{
-    
+    height: 100%;
+    width: 100%;
     
   }
   .plant{
