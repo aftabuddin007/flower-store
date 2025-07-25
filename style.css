@@ -120,7 +120,7 @@ body{
      font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size:1.37rem ;
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
 .to-card{
     font-weight: 400;
@@ -436,7 +436,7 @@ body{
     
   }
   .to-card{
-    padding:15px 45px ;
+    padding:18px 39px ;
   }
   .flower{
     flex-direction: column;
