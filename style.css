@@ -426,6 +426,9 @@ body{
   .plant-title{
      font-size: 2rem; 
   }
+  .plant-price{
+      margin-top: -0.9px;
+  }
   .plant-description{
         font-size: 1rem;
         padding: 0 15px;
