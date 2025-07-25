@@ -211,7 +211,7 @@ body{
     justify-content: calc(50%);
     gap: 25px;
     max-width: 1140px;
-    margin: 120px auto;
+    margin-top: 120px ;
     overflow-x: hidden;
 }
 .offer-left-item1 {
@@ -414,7 +414,14 @@ body{
     
     
   }
+  .plant{
+      margin-top: 50px;
+  }
+  .plant-title{
+     font-size: 2rem; 
+  }
   .plant-description{
+        font-size: 1rem;
         padding: 0 15px;
   }
   .plant-all-card{
@@ -422,17 +429,24 @@ body{
     padding: 15px;
     
   }
+  .to-card{
+    padding:16px 60px ;
+  }
   .flower{
     flex-direction: column;
     padding: 15px;
     margin-top: 40px;
   }
   .flower-title{
-    
-    
+    font-size: 2rem;
+    margin-top: -60px;
+  }
+  .flower-description{
+      font-size: 1rem;
+      margin-top: 30px;
   }
   .flower-img img{
-    padding:  15px;
+    
     width: 100%;
   }
   #fl-des4{
@@ -447,7 +461,14 @@ body{
     display: none;
   }
  .join-title{
-    font-size: 20px;
+    font-size: 1.5rem;
+  }
+  .deal{
+    margin-bottom: 30px;
+    
+  }
+  .deal-title{
+    font-size: 2rem;
   }
   .join-ti-email{
     
@@ -459,6 +480,7 @@ body{
    .offer{
     flex-direction: column;
     padding: 15px;
+    margin-top: 50px;
   }
   .offer-left-item2{
     width: 100%;
@@ -485,6 +507,10 @@ body{
   }
   #email{
     padding-left: 10px;
+    
+  }
+  .join{
+    margin-top: 50px;
   }
 
 
@@ -497,5 +523,10 @@ body{
   .footer{
     padding: 20px 20px;
     width: 100%;
+    margin-top: 50px;
+  }
+  .footer-logo img{
+    height:109px ;
+    width: 180px;
   }
 }
