@@ -70,12 +70,12 @@ body{
 }
 .banner-image img{
     height: 355px;
-    width: 570px;
+    width: 100%;
 
 }
 .banner{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 1140px;
     margin: 0 auto;
@@ -99,11 +99,12 @@ body{
     
 
 }
-.plant-title-description{
+.plant{
     max-width: 1140px;
     margin: 0 auto;
     text-align: center;
     margin-top: 120px;
+    overflow-x: hidden;
 }
 .plant-img img{
     height: 322px;
@@ -122,13 +123,14 @@ body{
     margin-bottom: 30px;
 }
 .to-card{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1rem;
     font-family: "Inter", sans-serif;
     color: rgb(255, 255, 255);
     background-color: rgb(233, 90, 8);
-    padding: 19px 87px;
+    padding: 17px 80px;
     border: none;
+    
     
 }
 .plant-all-card{
@@ -137,7 +139,7 @@ body{
     max-width: 1140px;
     margin: 0 auto;
     text-align: center;
-    gap: 20px;
+    gap: 15px;
     margin-top: 30px;
 
 }
@@ -161,9 +163,11 @@ body{
     display: flex;
     gap: 60px;
     align-items: center;
+    overflow-x: hidden;
     
 }
-.flower-img{
+.flower-img {
+
     width: 100%;
 }
 .flower-title-description{
@@ -208,6 +212,7 @@ body{
     gap: 25px;
     max-width: 1140px;
     margin: 120px auto;
+    overflow-x: hidden;
 }
 .offer-left-item1 {
     background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(./assets/deal-bloom.png);
@@ -278,7 +283,7 @@ body{
 .join{
     background-image: url(./assets/news-letter-bg.png);
     max-width: 1440px;
-    padding: 200px 0;
+    padding: 150px 0;
     background-size: cover;
     margin: 0 auto;
     text-align: center;
@@ -288,9 +293,7 @@ body{
     justify-content: center;
     
 }
-.join-ti-email{
-  
-}
+
 .join-title{
     color:rgb(255, 255, 255);
     font-size: 3.112rem;
@@ -322,7 +325,7 @@ body{
     max-width: 1440px;
     padding: 60px 160px;
     margin: 120px auto;
-    
+    overflow-x: hidden;
 }
 .footer-content{
     
@@ -408,7 +411,7 @@ body{
     
   }
   .banner-image img{
-    width: 100%;
+    
     
   }
   .plant-description{
@@ -416,7 +419,7 @@ body{
   }
   .plant-all-card{
     grid-template-columns: repeat(2,1fr);
-    padding:0 15px;
+    padding: 15px;
     
   }
   .flower{
@@ -425,12 +428,15 @@ body{
     margin-top: 40px;
   }
   .flower-title{
-    font-size: 1.5rem;
+    
     
   }
   .flower-img img{
-    
+    padding:  15px;
     width: 100%;
+  }
+  #fl-des4{
+    display: none;
   }
   .offer-right{
     width: 100%;
@@ -452,7 +458,7 @@ body{
   }
    .offer{
     flex-direction: column;
-    padding:0 15px;
+    padding: 15px;
   }
   .offer-left-item2{
     width: 100%;
@@ -464,6 +470,7 @@ body{
     
   }
   .offer-right{
+    
     padding: 65px 42px;
     font-size: 1.37rem;
   }
@@ -489,5 +496,6 @@ body{
   }
   .footer{
     padding: 20px 20px;
+    width: 100%;
   }
 }
